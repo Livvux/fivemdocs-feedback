@@ -1,0 +1,27 @@
+name: Documentation correction
+description: Report an incorrect statement or broken example in FiveM Docs.
+title: 'Correction: '
+body:
+  - type: markdown
+    attributes:
+      value: 'This report is public. Do not include keys, tokens, player identifiers, private addresses or unredacted logs.'
+  - type: input
+    id: page
+    attributes:
+      label: Article URL
+      description: The public fivemdocs.com article URL.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Incorrect statement and proposed correction
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Primary source or minimal reproduction
+      description: Include relevant server artifact, Legacy/Enhanced track and runtime versions. Redact sensitive data.
+    validations:
+      required: true
